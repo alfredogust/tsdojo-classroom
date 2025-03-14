@@ -12,4 +12,19 @@ export const displayInformedNumber = (): void => {
     } else {
         console.log(`The informed number was ${informedNumber}`);
     }
-}   
+};
+
+export const calculateTwoNumbers = (): void => {
+    const firstNumber: number = Number(readlineSync.question("Enter the first number: "));
+    const secondNumber: number = Number(readlineSync.question("Enter the second number: "));
+
+    if (isNaN(firstNumber)) {
+        console.log("The first value is not a valid number!")
+    } else if (isNaN(secondNumber)) {
+        console.log("The second value is not a valid number!")
+    } else {
+        const sumOfNumbers: number = firstNumber + secondNumber;
+        
+        console.log(`The value of the sum is: ${sumOfNumbers}`)
+    }
+};
