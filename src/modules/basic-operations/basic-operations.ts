@@ -14,7 +14,7 @@ export const displayInformedNumber = (): void => {
     }
 };
 
-export const calculateTwoNumbers = (): void => {
+export const sumTwoNumbers = (): void => {
     const firstNumber: number = Number(readlineSync.question("Enter the first number: "));
     const secondNumber: number = Number(readlineSync.question("Enter the second number: "));
 

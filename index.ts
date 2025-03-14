@@ -1,10 +1,11 @@
 import * as readlineSync from 'readline-sync';
-import {displayInformedNumber, helloWorld} from './src/modules/basic-operations/basic-operations';
+import {displayInformedNumber, helloWorld, sumTwoNumbers} from './src/modules/basic-operations/basic-operations';
 
 const showMenu = (): void => {
     console.log("\n=== Exercise List: Basic Operations with TypeScript ===");
     console.log("1 - Hello World");
     console.log("2 - Informed Number");
+    console.log("3 - Sum Two Numbers");
     console.log("0 - Exit\n");
 };
 
@@ -21,6 +22,8 @@ const app = (): void => {
                 break;
             case 2:
                 displayInformedNumber();
+            case 3:
+                sumTwoNumbers();
             case 0:
                 break;
             default:
